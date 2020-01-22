@@ -29,7 +29,14 @@
                             <outlet property="delegate" destination="TNe-XC-e4X" id="mtO-XQ-NO5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo" id="PGs-TR-pGs"/>
+                    <navigationItem key="navigationItem" title="Todo" id="PGs-TR-pGs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Uih-lc-eUv">
+                            <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <connections>
+                                <action selector="addButtonPress:" destination="TNe-XC-e4X" id="zKL-kf-EVD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veF-vd-0fL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
